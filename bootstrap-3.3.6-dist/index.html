@@ -21,6 +21,35 @@
     .header{
       margin-top: -20px;
     }
+
+
+
+    .btn-style {
+      margin: 10px 0px 10px 0px;
+      align-self: center;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+    .color-text {
+      color: white;
+    }
+    .color-text-btn {
+      color: black;
+    }
+    .text {
+      max-width: 250px;
+      max-height: 200px;
+      justify-content: center;
+      font-family: Verdana;
+    }
+    .content {
+      max-height: 700px;
+    }
+    body {
+      background-color: #000;
+    }
     </style>
 
 
@@ -39,7 +68,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Bag<spam class="badge">42</spam></a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Person Icon <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/person-icon.png"/><span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="#">Log in</a></li>
             <li role="separator" class="divider"></li>
@@ -53,11 +82,11 @@
 
     <!-- header with the brand -->
 
-    <div class="jumbotron header">
+    <div class="jumbotron header" style="background-color: black;">
         
         <div class="container">
         
-          <h1 style="text-align: center;">Welcome to Black Haven</h1>
+          <h1 style="text-align: center; color: white;" >Welcome to Black Haven</h1>
 
         </div>
         
@@ -65,30 +94,67 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h1>
+        <div class="col-md-4 content">
+          <h2 class="color-text">
             Name
-          </h1>
-          <p>IMAGEM MAROTA</p>
-          <p><a href='#'>Details</a> | <a href="#">Add to bag</a>
+          </h2>
+          <br/>
+          <img src="images/images.jpg"/>
+          <div class="color-text">
+            <p class="text"> describing text of the t-shirt </p>
+          </div>
+
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default btn-style">Details</button>
+            <button type="button" class="btn btn-default btn-style">Add to Bag</button>
+          </div>
+          
         </div>
         <div class="col-md-4">
-          <h1>
+          <h2 class="color-text">
             Name
-          </h1>
-          <p>IMAGEM MAROTA</p>
-          <p><a href='#'>Details</a> | <a href="#">Add to bag</a>
-        </div>
+          </h2>
+          <br/>
+          <img src="images/images.jpg"/>
+          <div class="color-text">
+            <p class="text"> describing text of the t-shirt </p>
+          </div>
+
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default btn-style">Details</button>
+            <button type="button" class="btn btn-default btn-style">Add to Bag</button>
+          </div>
+          
+        </div> 
+
         <div class="col-md-4">
-          <h1>
+          <h2 class="color-text">
             Name
-          </h1>
-          <p>IMAGEM MAROTA</p>
-          <p><a href='#'>Details</a> | <a href="#">Add to bag</a>
+          </h2>
+          <br/>
+          <img src="images/images.jpg"/>
+          <div class="color-text">
+            <p class="text"> describing text of the t-shirt blabalbalablablabalab 
+            labalbalablablbala</p>
+          </div>
+
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default btn-style">Details</button>
+            <button type="button" class="btn btn-default btn-style">Add to Bag</button>
+          </div>
+          
+        </div>      
         </div>
       </div>
     </div>
 
+
+    <nav>
+  <ul class="pager ">
+    <li><a href="#" class="color-text-btn">Previous</a></li>
+    <li><a href="#" class="color-text-btn">Next</a></li>
+  </ul>
+    </nav>
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
